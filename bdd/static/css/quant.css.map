@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "../../Users/sharp/work/supertrade/bdd/static/css/quant.css",
+	"sources": [
+		"../../Users/sharp/work/supertrade/bdd/static/css/quant.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,mFAAmF,GASjG;EAVD,AAEE,IAFE,CAEF,gBAAgB,CAAA;IACd,WAAW,EAAE,IAAI,GAClB;EAJH,AAME,IANE,CAMF,MAAM,CAAA;IACJ,OAAO,EAAE,QAAQ;IACjB,SAAS,EAAE,IAAI,GAChB"
+}

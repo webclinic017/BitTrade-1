@@ -1,0 +1,14 @@
+__pycache__/
+local_settings.py
+.DS_Store
+bdd/envs/development.py
+*.pyc
+static/css/*.css.map
+static/*
+bdd/logs/*.log
+celerybeat-schedule.db
+celerybeat.pid
+logs/*
+.idea
+dev_settings.py
+mylog-rest.json

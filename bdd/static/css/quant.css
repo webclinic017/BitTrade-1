@@ -1,0 +1,9 @@
+body {
+  font-family: Helvetica, Arial, "PingFang SC", "Noto Sans", Roboto, "Microsoft Yahei", sans-serif; }
+  body .container-fluid {
+    padding-top: 50px; }
+  body .alert {
+    padding: 5px 10px;
+    font-size: 16px; }
+
+/*# sourceMappingURL=../../../../../../../static/css/quant.css.map */

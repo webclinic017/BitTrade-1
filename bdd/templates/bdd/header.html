@@ -1,0 +1,38 @@
+{% load staticfiles %}
+{% load i18n %}
+<div class="user-header">
+  <div class="header-one">
+    <div class="header-logo">
+      <a href='/'>
+          <img src="{% static 'image/logo.png' %}" class="one-logo" width="40"/>
+      </a>
+    </div>
+    <nav class="header-two">
+      {% if request.user.is_authenticated %}
+      <li class="hli-1">
+        <a class="header-users" href="#"></a>
+      </li>
+      <li class="hli-2">
+        <a class="header-menu1" href="#">{{ request.user.mobile }}</a>
+      </li>
+      <li class="hli-3">
+        <a href="{% url 'users:logout' %}" class="login one-a small">{% trans 'logout' %}</a>
+        <div class="btn-group language d-none">
+          <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn btn-default dropdown-toggle">
+            English
+            <span class="caret"></span>
+             </button>
+             <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="javascript:void(0);">English</a></li>
+              <li><a href="javascript:void(0);">繁體中文</a></li>
+              <li><a href="javascript:void(0);">한국어</a></li>
+              <li><a href="javascript:void(0);">Français</a></li>
+             </ul>
+          </div>
+      </li>
+      {% else %}
+
+      {% endif %}
+    </nav>
+  </div>
+</div>

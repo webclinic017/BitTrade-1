@@ -1,0 +1,43 @@
+{% extends "bdd/layouts/mobile.html" %}
+{% load staticfiles %}
+{% block content %}
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">币种</th>
+    <th scope="col">仓位</th>
+    <th scope="col">操作</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for coin in coins %}
+   <tr>
+     <td>
+       <p>
+         {{coin.name}}
+       </p>
+     </td>
+
+    <td>
+      <p>
+        {{ coin.position }}
+      </p>
+    </td>
+
+    <td>
+      <p>
+        <a href="/q/binance/coins/{{coin.id}}/add" class='btn btn-sm btn-info'>
+          加仓
+        </a>
+        &nbsp;&nbsp;
+        <a href="/q/binance/coins/{{coin.id}}/close" class='btn btn-sm btn-danger' onclick="if(confirm('是否确定市价卖出?')==false)return false;">
+          清仓
+        </a>
+      </p>
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<div class='text-center'></div>
+{% endblock %}
